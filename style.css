@@ -1,51 +1,108 @@
+/* Basic Styling */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
+/* Container for the main app */
 .container {
-  text-align: center;
-  width: 90%;
-  max-width: 600px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
 }
 
-input, button {
-  padding: 10px;
-  font-size: 16px;
-  margin: 10px 0;
+/* Search bar styling */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-#music-list {
-  margin-top: 20px;
+#search-input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #1db954;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #1ed760;
+}
+
+/* Music List Styling */
+.music-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .music-item {
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
 }
 
-.music-item button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
+.music-item:hover {
+    transform: scale(1.02);
 }
 
-.music-item button:hover {
-  background-color: #0056b3;
+.thumbnail {
+    width: 120px;
+    height: 90px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.music-title {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #fff;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #1db954;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1ed760;
+}
+
+/* Player Container Styling */
+#player-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#youtube-player {
+    border: 2px solid #444;
+    border-radius: 8px;
 }
